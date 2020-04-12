@@ -5,16 +5,23 @@ STEPS
 
 1) git clone https://github.com/rajnish05/Node-React-Curd.git
 
-2) cd Node-React-Crud           // go to project directory
+// go to project directory
+2) cd Node-React-Crud 
 
-3) cd client                    // go to client directory
+// go to client directory
+3) cd client                    
 
-4) npm i                        // install client dependency
+// install client dependency
+4) npm i                        
 
-5) cd ../                       // go to project directory
+// go to project directory
+5) cd ../                       
 
-6) npm i                        // install server dependency
+// install server dependency
+6) npm i                        
 
-7) npm install concurrently     //  insall concurrently package 
+//  insall concurrently package
+7) npm install concurrently      
 
-8) npm run dev                  // Run the Application
+// Run the Application
+8) npm run dev                  
