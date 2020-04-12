@@ -1,0 +1,30 @@
+{
+  "name": "node-react-curd",
+  "version": "1.0.0",
+  "main": "server.js",
+  "scripts": {
+    "client-install": "npm install --prefix client",
+    "server": "nodemon server.js",
+    "client": "npm start --prefix client",
+    "dev": "concurrently \"npm run server\" \"npm run client\"",
+    "start": "node server.js"
+  },
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "@fortawesome/fontawesome-svg-core": "^1.2.28",
+    "@fortawesome/free-solid-svg-icons": "^5.13.0",
+    "@fortawesome/react-fontawesome": "^0.1.9",
+    "concurrently": "^5.1.0",
+    "cors": "^2.8.5",
+    "express": "^4.17.1",
+    "is-empty": "^1.2.0",
+    "mongoose": "^5.9.7",
+    "mongoose-sequence": "^5.2.2",
+    "morgan": "^1.10.0",
+    "validator": "^13.0.0"
+  },
+  "devDependencies": {},
+  "keywords": [],
+  "description": ""
+}
