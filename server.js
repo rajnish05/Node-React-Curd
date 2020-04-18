@@ -21,8 +21,9 @@ const port = process.env.PORT || 5001;
 // connect to database
 mongoose.Promise = global.Promise;
 mongoose.connect('mongodb://localhost/mern-crud');
-
+// route for User
 app.use('/api/v1/users',users);
+// route for Customer
 app.use('/api/v1/customers',customers);
 
 

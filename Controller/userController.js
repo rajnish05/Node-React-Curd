@@ -1,6 +1,7 @@
 const userService = require("../Service/userService");
 const { addUserValidation } = require('../Validation/userValidation')
 
+// This Controller is used for Adding User
 exports.addUser = (req,res) =>{
     const { errors, isValid } = addUserValidation(req.body);
     if (!isValid) {
@@ -17,6 +18,7 @@ exports.addUser = (req,res) =>{
 
 }
 
+// This Controller is used for get User list
 exports.getUser = (req,res) =>{
     userService.getUserService()
     .then((result) =>{
@@ -30,6 +32,7 @@ exports.getUser = (req,res) =>{
 
 }
 
+// This Controller is used for deleting User
 exports.deleteUserById = (req,res) =>{
     userService.deleteUserByIdService(req.params)
     .then((result) =>{
@@ -41,6 +44,7 @@ exports.deleteUserById = (req,res) =>{
 
 }
 
+// This Controller is used for Updating User
 exports.updateUserById = (req,res) =>{
     const { errors, isValid } = addUserValidation(req.body);
     if (!isValid) {

@@ -1,5 +1,6 @@
 const customerModel = require("../Model/customerSchema");
 
+// This Service is Used for adding Customer
 exports.addCustomerService = (payload) =>{
     return new Promise(function(resolve, reject){
         let Customer = new customerModel(payload)
@@ -13,6 +14,7 @@ exports.addCustomerService = (payload) =>{
     })
 }
 
+// This Service is used for getting customer List
 exports.getCustomerService = () =>{
     return new Promise(function(resolve, reject){
         customerModel.find()
@@ -25,6 +27,7 @@ exports.getCustomerService = () =>{
     })
 }
 
+// This Service is used for getting customer Details by _id
 exports.getCustomerByIdService = (payload) =>{
     return new Promise(function(resolve,reject){
         let id = payload.id;
@@ -37,6 +40,8 @@ exports.getCustomerByIdService = (payload) =>{
         })
     })
 }
+
+// This Service is used for getting customer Details by Customerid
 
 exports.getCustomerByCustomIdService = (params) =>{
     return new Promise(function(resolve,reject){
@@ -52,6 +57,7 @@ exports.getCustomerByCustomIdService = (params) =>{
     
 }
 
+// This Service is used for updating customer details using _id
 exports.updateCustomerByIdService = (params,payload) =>{
     return new Promise(function(resolve,reject){
         let id = params.id;
@@ -65,6 +71,7 @@ exports.updateCustomerByIdService = (params,payload) =>{
     })
 }
 
+// This Service is used for Deleting Customer
 exports.deleteCustomerByIdService = (params) =>{
     return new Promise(function(resolve,reject){
         let id = params.id;

@@ -1,5 +1,6 @@
 const userModel = require("../Model/userSchema")
 
+// This Service is used for adding User
 exports.addUserService = (payload) =>{
     return new Promise(function(resolve,reject){
         const User = new userModel(payload)
@@ -14,6 +15,7 @@ exports.addUserService = (payload) =>{
 
 };
 
+// This Service is used for getting User list
 exports.getUserService = () =>{
     return new Promise(function(resolve, reject){
         userModel.find()
@@ -27,6 +29,7 @@ exports.getUserService = () =>{
     })
 };
 
+// This Service is Used for delete User
 exports.deleteUserByIdService = (userId) =>{
     return new Promise(function(resolve,reject){
         let id = userId.id;
@@ -42,6 +45,7 @@ exports.deleteUserByIdService = (userId) =>{
 
 };
 
+// This Service is Used for deleting User
 exports.updateUserByIdService = (userId,payload) =>{
     return new Promise(function(resolve,reject){
         let id = userId.id;

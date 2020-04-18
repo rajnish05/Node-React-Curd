@@ -2,6 +2,7 @@ const mongoose = require("mongoose");
 const Schema = mongoose.Schema;
 const AutoIncrement = require("mongoose-sequence")(mongoose);
 
+// Creating User Schema
 let userSchema = new Schema({
     userName: {
         type: String,

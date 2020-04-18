@@ -3,7 +3,7 @@ import { Link } from 'react-router-dom';
 const Header = () =>
     (
         <nav className="navbar navbar-expand-lg navbar-light bg-light">
-     <Link className="navbar-brand navbar-brand-custom " to="/"><img src="/Image/logo.png" className="logo" alt="Kumar" /></Link>
+     <Link className="navbar-brand navbar-brand-custom " ><img src="/Image/logo.png" className="logo" alt="Kumar" /></Link>
      <button className="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
        <span className="navbar-toggler-icon" />
      </button>
